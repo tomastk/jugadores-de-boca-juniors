@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Marcos Rojo</title>
+        <link rel="stylesheet" href="./player.css">
+        <style>
+              * {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            html {
+              background: rgb(243,178,41);
+background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53%, rgba(16,63,121,1) 53%);
+            }
+            img {
+              border-radius: 50%;
+            }
+            table tr td{
+                padding-top: 20px;
+            }
+            p {
+                line-height: 1.5;
+            }
+            a {
+                border-radius: 20px;
+                border: solid black 2px;
+                padding: 10px;
+                text-decoration: none;
+                color: black;
+                transition: .3s;
+            }
+
+            h1 {
+              margin-top: 20px;
+            }
+            a:hover{
+              background-color: rgb(0, 0, 0, .9);
+              opacity: 1;
+              color: white;
+            }
+
+            body {
+                max-width: 80%;
+                margin: auto;
+                animation-name: appear;
+                animation-duration:3s;
+                background-color: white;
+                padding: 0 30px 30px 30px;
+            }
+
+            @keyframes appear {
+               from {opacity: 0%};
+               to {opacity: 100%}
+            }
+        </style>
+    </head>
+    <body>
+      <div class="player">
+        <button id="btn-music">Reproducir Música</button>
+        <div class="text" id="text">No se está reproduciendo nada</div>
+      </div>
+        <table width="1000px" align="center">
+            <tr>
+                <td width="700px">
+                    <a href="./index.html">Volver al Inicio <- </a>
+                    <h1>Marcos Rojo</h1>
+                    <p>
+                        Faustino Marcos Alberto Rojo (La Plata, Provincia de Buenos Aires, Argentina, 20 de marzo de 1990) es un futbolista argentino. Juega de defensa central o lateral izquierdo y su equipo actual es Boca Juniors de la Liga Profesional de Argentina.
+                    </p>
+                </td>
+                <td>
+                    <img src="./img/rojo.jpg" alt="" width="250px" height="250px">
+                </td>
+            </tr>
+        </table>
+        <div class="contenido">
+            <h2 align="center">Biografía</h2>
+            <p>
+                Salido de la cantera del club "león", debutó en el año 2008 en el partido Colón 0 - Estudiantes de La Plata 1 de la Primera División de Argentina.
+
+Alejandro Sabella lo convocó para disputar el Mundial de Clubes 2009 disputando el partido final frente al Fútbol Club Barcelona. Finalmente Estudiantes sería subcampeón del mundo.
+
+En el club platense permaneció hasta el Torneo Apertura 2010 para luego, con 20 años dar el salto al fútbol ruso.</p>
+            <h2>Trayectoria en Boca Juniors</h2>
+            <p>
+                El 1 de febrero de 2021, se confirma su llegada a Boca Juniors en condición de libre, tras finalizar su vínculo con el Manchester United. Al día siguiente, en su primera conferencia de prensa, declaró que se sentía muy motivado por llegar a "el club más grande de la Argentina" y ansioso por ganar la Copa Libertadores.​ Sin embargo, se lesionó en su primer entrenamiento. Debutó oficialmente el 14 de marzo en el empate 1-1 contra River Plate, ingresando por Gonzalo Maroni. En octubre de ese mismo año convirtió su primer tanto con el Xeneize frente a Huracán.​ A fines de ese mismo año ganó la Copa Argentina 2019-20, su primer título con Boca.
+                <br><br>
+En abril de 2022 convirtió su segundo tanto con el Xeneize, de penal, ante Arsenal de Sarandi.
+            
+        </div>
+      <script src="./player.js"></script>
+    </body>
+</html>

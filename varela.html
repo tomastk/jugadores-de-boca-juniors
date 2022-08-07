@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Alan Varela</title>
+        <link rel="stylesheet" href="./player.css">
+        <style>
+               * {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            html {
+              background: rgb(243,178,41);
+background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53%, rgba(16,63,121,1) 53%);
+            }
+            img {
+              border-radius: 50%;
+            }
+            table tr td{
+                padding-top: 20px;
+            }
+            p {
+                line-height: 1.5;
+            }
+            a {
+                border-radius: 20px;
+                border: solid black 2px;
+                padding: 10px;
+                text-decoration: none;
+                color: black;
+                transition: .3s;
+            }
+
+            h1 {
+              margin-top: 20px;
+            }
+            a:hover{
+              background-color: rgb(0, 0, 0, .9);
+              opacity: 1;
+              color: white;
+            }
+
+            body {
+                max-width: 80%;
+                margin: auto;
+                animation-name: appear;
+                animation-duration:3s;
+                background-color: white;
+                padding: 0 30px 30px 30px;
+            }
+
+            @keyframes appear {
+               from {opacity: 0%};
+               to {opacity: 100%}
+            }
+        </style>
+    </head>
+    <body>
+      <div class="player">
+        <button id="btn-music">Reproducir Música</button>
+        <div class="text" id="text">No se está reproduciendo nada</div>
+      </div>
+        <table width="1000px" align="center">
+            <tr>
+                <td width="700px">
+                    <a href="./index.html">Volver al Inicio <- </a>
+                    <h1>Alan Varela</h1>
+                    <p>
+                        Alan Gonzalo Varela (Isidro Casanova, Partido de La Matanza, Provincia de Buenos Aires, 4 de julio del 2001), es un futbolista argentino que se desempeña como mediocampista y su equipo actual es Boca Juniors.
+                    </p>
+                </td>
+                <td>
+                    <img src="./img/varela.jpg" alt="" width="300px" height="300px">
+                </td>
+            </tr>
+        </table>
+        <div class="contenido">
+            <h2 align="center">Biografía</h2>
+            <p>
+                Arribó a Boca Juniors en el año 2012, luego de un acuerdo que el club estableciera junto al F.C. Barcelona, en un acuerdo entre juveniles, en donde al encontrarse jugando en la filial del club español fue seleccionado por el equipo argentino.​ Desde allí, se desempeño en las divisiones inferiores de Boca Juniors hasta la temporada 2020-21. 
+                <br> 
+En agosto de 2020 fue seleccionado en una lista de 40 jugadores que disputarían la Copa Libertadores 2020.​ Sin embargo, no logró sumar minutos en dicha competición. 
+<br>
+Su debut en primera se produjo el 20 de diciembre de 2020 en un partido correspondiente a la zona campeonato de la Copa Maradona, frente a Independiente.​ En marzo de 2021, ganó con Boca dicha competición, la cual seria su primer titulo con el club de la Ribera. 
+<br>
+A principios de 2022, Varela, fue bajado a la reserva de Boca por "actos de indisciplina" según el director técnico de ese entonces Sebastián Battaglia. También fue bajado el juvenil Agustín Almendra, sin embargo, unas semanas después, Varela, volvería a ser subido a primera por su buena conducta, desde allí se afianzaría como mediocampista titular de Boca. <br>
+El 26 de mayo de 2022, Alan, marcó su primer gol oficial, este fue frente a Deportivo Cali por la fase de grupos de la Copa Libertadores 2022. El partido terminó 1:0 a favor del Xeneize y lo clasificó a los octavos de final de dicha competición.​ También fue el gol número ocho mil en toda la historia de Boca Juniors.
+            </p>
+        </div>
+      <script src="./player.js"></script>
+    </body>
+</html>

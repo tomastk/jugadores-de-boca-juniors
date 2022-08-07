@@ -1,0 +1,39 @@
+.player {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+}
+.player button {
+  background: white;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: solid white 2px;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 1rem;
+  box-shadow: rgb(0,0,0,.5) 2px 2px 3px;
+}
+.player button:hover{
+  background-color: black;
+  color: white;
+  border: solid black 2px;
+}
+.text {
+  display: block;
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  margin-top:20px;
+  box-shadow: rgb(0,0,0,.5) 2px 2px 3px;
+  font-size: 12px;
+}
+
+table, .contenido {
+  max-width: 800px!important;
+  margin: auto;
+}
+
+body {
+  animation-duration: 2s!important;
+}

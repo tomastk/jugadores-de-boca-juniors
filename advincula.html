@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Luis Advincula</title>
+        <link rel="stylesheet" href="./player.css">
+        <style>
+              * {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            html {
+              background: rgb(243,178,41);
+background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53%, rgba(16,63,121,1) 53%);
+            }
+            img {
+              border-radius: 50%;
+            }
+            table tr td{
+                padding-top: 20px;
+            }
+            p {
+                line-height: 1.5;
+            }
+            a {
+                border-radius: 20px;
+                border: solid black 2px;
+                padding: 10px;
+                text-decoration: none;
+                color: black;
+                transition: .3s;
+            }
+
+            h1 {
+              margin-top: 20px;
+            }
+            a:hover{
+              background-color: rgb(0, 0, 0, .9);
+              opacity: 1;
+              color: white;
+            }
+
+            body {
+                max-width: 80%;
+                margin: auto;
+                animation-name: appear;
+                animation-duration:3s;
+                background-color: white;
+                padding: 0 30px 30px 30px;
+            }
+
+            @keyframes appear {
+               from {opacity: 0%};
+               to {opacity: 100%}
+            }
+        </style>
+    </head>
+    <body>
+      <div class="player">
+        <button id="btn-music">Reproducir Música</button>
+        <div class="text" id="text">No se está reproduciendo nada</div>
+      </div>
+        <table width="1000px" align="center">
+            <tr>
+                <td width="700px">
+                    <a href="./index.html">Volver al Inicio <- </a>
+                    <h1>Luis Advincula</h1>
+                    <p>
+                        Luis Jan Piers Advíncula Castrillón (El Carmen, Ica; 2 de marzo de 1990) es un futbolista profesional peruano. Juega como lateral derecho y su equipo actual es el Club Atlético Boca Juniors de la Liga Profesional del Fútbol Argentino. Fue internacional con la Selección Peruana desde el año 2010 hasta el año 2022.
+                        <br>
+                     </p>
+                </td>
+                <td>
+                    <img src="./img/advincula.jpg" width="300px" height="300px">
+                </td>
+            </tr>
+        </table>
+        <div class="contenido">
+            <h2 align="center">Biografía</h2>
+            <p>
+                Luis Advíncula nació en el distrito de El Carmen en Chincha y vivió toda su infancia allí, es también la ciudad natal de sus padres: el exfutbolista Luis Advíncula Plesvítero, también fue futbolista en los 70 y los 80, y la cocinera Felicia Castrillón. Luego de vivir en Lurín, se trasladan al barrio de Chicmabamba, en el distrito limeño de San Martín de Porres.
+                <br>
+                Su padre, que jugó como profesional en el Deportivo Junín, Club Deportivo Municipal, Coronel Bolognesi, Melgar y Atlético Torino, creció en su barrio de Lima un equipo denominado Los Leones de Chicmabamba, en donde su hijo Luis -pese a ser menor- era uno de los más destacados.7​
+            </p>
+            <p>
+              Con la Selección de fútbol del Perú participó en 3 ediciones de la Copa América: Argentina 2011, Chile 2015, consiguiendo en ambas la medalla de bronce, también obtuvo una medalla de plata en la Copa América 2019. Es el quinto jugador con más presencias (103) y el décimo asistidor (6) en la historia de la selección incaica.
+            </p>
+            <p>
+              Tras un estudio realizado por la FIFA en 2018, Advíncula figuró como el futbolista más veloz del mundo con una velocidad promedio de 36,3 km/h, por delante de Gareth Bale. En el año 2019 fue el cuarto jugador más veloz con una velocidad promedio de 36,15 km/h.6​
+            </p>
+            <h2>Trayectoria en Boca Juniors</h2>
+            <p>
+                El 10 de julio de 2021 se confirmó su partida al fútbol argentino después de que el Rayo Vallecano aceptara una oferta de 2.5 millones de dólares del Boca Juniors, equipo en el que también participa su compañero de selección Carlos Zambrano.19​ Después de días de incertidumbre sobre su llegada, se anunció que el trato se estableció con Advíncula llegando a tierras argentinas el 21 de julio de 2021. Debutó el 4 de agosto frente al River Plate por los octavos de final de la Copa Argentina, ganando 4-1 en penales después de haber igualado sin goles.
+                <br>
+El 8 de diciembre se corona campeón de dicho torneo ante Talleres por penales.
+                <br>
+El 13 de marzo de 2022 marca su primer gol con Boca, en la victoria 0-1 de visita frente a Estudiantes de La Plata en la fecha 6 de la Copa de la Liga.
+            </p>
+            
+        </div>
+      <script src="./player.js"></script>
+    </body>
+</html>
