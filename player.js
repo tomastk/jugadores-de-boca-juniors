@@ -1,7 +1,15 @@
 const btnMusic = document.getElementById('btn-music');
 const text = document.getElementById('text')
+
+/* Audio info */
+
+const audioInfo = {
+  src: 'bg-music.mp3',
+  title: ' ¿Qué pasó con el fantasma del descenso? - Pino Versiona'
+}
+
 /* Setting the audio file and setting the loop */
-const audio = new Audio('bg-music.mp3')
+const audio = new Audio(audioInfo.src)
 audio.loop = true;
 
 if (localStorage.getItem('audioCurrentTime' === null)) {
@@ -31,7 +39,7 @@ function playMusic(buttonText){
     audio.currentTime = getCurrentTime()
     audio.play();
     btnMusic.innerText = 'Pausar Música'
-    text.innerHTML = 'Reproduciendo: ¿Qué paso con el fantasma del descenso? - PinoVersiona'
+    text.innerHTML = 'Reproduciendo:' + audioInfo.title;
   }
   if (buttonText === "Pausar Música") {
     audio.pause();
