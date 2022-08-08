@@ -1,3 +1,8 @@
+p {
+  text-align: justify;
+}
+
+
 .player {
   position: fixed;
   bottom: 15px;
