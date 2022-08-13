@@ -21,9 +21,13 @@ background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53
                 line-height: 1.5;
             }
             a {
-                border-radius: 20px;
+              border-radius: 20px;
                 border: solid black 2px;
                 padding: 10px;
+                display: block;
+                width: 150px;
+                margin-top: 20px;
+                text-align: center;
                 text-decoration: none;
                 color: black;
                 transition: .3s;
@@ -51,6 +55,9 @@ background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53
                from {opacity: 0%};
                to {opacity: 100%}
             }
+            .galeria img {
+              max-width: 100%;
+            }
         </style>
     </head>
     <body>
@@ -73,7 +80,17 @@ background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53
                 </td>
             </tr>
         </table>
+        <hr>
         <div class="contenido">
+          <div class="info">
+            <h2>Información sobre el jugador</h2>
+            <p>
+              <b>Nacimiento:</b> El Carmen, Perú, 2 de marzo de 1990 <br>
+              <b>Nacionalidad:</b> Peruana <br>
+              <b>Altura: </b> 1.80 <br>
+              <b>Peso: </b> 80kg
+            </p>
+          </div>
             <h2 align="center">Biografía</h2>
             <p>
                 Luis Advíncula nació en el distrito de El Carmen en Chincha y vivió toda su infancia allí, es también la ciudad natal de sus padres: el exfutbolista Luis Advíncula Plesvítero, también fue futbolista en los 70 y los 80, y la cocinera Felicia Castrillón. Luego de vivir en Lurín, se trasladan al barrio de Chicmabamba, en el distrito limeño de San Martín de Porres.
@@ -94,7 +111,13 @@ El 8 de diciembre se corona campeón de dicho torneo ante Talleres por penales.
                 <br>
 El 13 de marzo de 2022 marca su primer gol con Boca, en la victoria 0-1 de visita frente a Estudiantes de La Plata en la fecha 6 de la Copa de la Liga.
             </p>
-            
+            <h2>Galería de imágenes</h2>
+            <div class="galeria">
+              <img src="./img/advincula1.jpg" alt="">
+              <img src="./img/advincula2.jpg" alt="">
+              <img src="./img/advincula3.jpg" alt="">
+            </div>
+            <a href="./index.html">Volver al Inicio <- </a>
         </div>
       <script src="./player.js"></script>
     </body>

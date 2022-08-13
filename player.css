@@ -26,8 +26,9 @@ p {
 }
 .text {
   display: block;
-  width: 40%;
   background-color: white;
+  max-width: 150px;
+  transition: all .3s;
   padding: 20px;
   margin-top:20px;
   box-shadow: rgb(0,0,0,.5) 2px 2px 3px;
@@ -41,4 +42,41 @@ table, .contenido {
 
 body {
   animation-duration: 2s!important;
+}
+
+.info {
+  background-color:rgb(243,178,41) ;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: rgb(0,0,0,.5) 2px 2px 3px;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: top;
+  gap: 20px;
+}
+
+.galeria img {  
+  border-radius: 0;
+}
+
+a[href="./index.html"] {
+  box-shadow: rgb(0,0,0,.7) 2px 2px 3px;
+  border: none!important;
+}
+
+a[href="./index.html"]{
+  display: block;
+  width: 30%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
 }

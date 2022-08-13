@@ -21,9 +21,13 @@ background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53
                 line-height: 1.5;
             }
             a {
-                border-radius: 20px;
+              border-radius: 20px;
                 border: solid black 2px;
                 padding: 10px;
+                display: block;
+                width: 150px;
+                margin-top: 20px;
+                text-align: center;
                 text-decoration: none;
                 color: black;
                 transition: .3s;
@@ -51,6 +55,22 @@ background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53
                from {opacity: 0%};
                to {opacity: 100%}
             }
+
+            .galeria img{
+              max-width: 100%;
+            }
+
+            h1::after{
+              content: 'EX';
+              position: relative;
+              top: 0;
+              clip-path:circle();
+              left: 20px;
+              padding: 10px;
+              width: 20px;
+              background-color: rgb(204, 23, 23);
+              color: white;
+            }
         </style>
     </head>
     <body>
@@ -72,7 +92,17 @@ background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53
                 </td>
             </tr>
         </table>
+        <hr>
         <div class="contenido">
+          <div class="info">
+            <h2>Información sobre el jugador</h2>
+            <p>
+              <b>Nacimiento:</b> 	San Carlos de Bariloche, Río Negro <br>
+              <b>Nacionalidad:</b> Argentina <br>
+              <b>Altura: </b> 1.85 <br>
+              <b>Peso: </b> 87kg
+            </p>
+          </div>
             <h2 align="center">Biografía</h2>
             <p>
                 Izquierdoz empezó a jugar en las divisiones inferiores de Lanús en el 2004. En el 2009, fue cedido por una temporada, junto con otros 9 compañeros de equipo, al Club Atlético Atlanta, esto fue debido a un acuerdo de reciprocidad que se firmó con Lanús. Disputó la temporada 2009-10 de la Primera B Metropolitana, participó en 32 encuentros y convirtió 4 goles al final de la campaña.
@@ -95,7 +125,13 @@ background: linear-gradient(114deg, rgba(243,178,41,1) 53%, rgba(16,63,121,1) 53
                 <br><br>
                 
                 En julio de ese mismo año, tras la derrota contra SC Corinthians en los octavos de final de la Copa Libertadores 2022, Cali, fue removido del once titular, dado que, previo a el encuentro, Izquierdoz dialogo con el consejo de futbol de Boca (Jorge "Patrón" Bermúdez, Mauricio "Chicho" Serna, Mauricio "Chelo" Delgado) acerca de unos premios económicos en caso de la eliminación del Xeneize en esa instancia, los encargados del consejo se lo negaron. Posterior a la derrota salió a la luz este evento y dio pie a que Izquierdoz vea su salida del club. A finales de Julio, también, Mauricio Serna afirmó que el defensor ya tenía cerrado el traspaso al club español Real Sporting de Gijón.​</p>
-            
+              <h2>Galería de imágenes</h2>
+                <div class="galeria">
+              <img src="./img/izquierdoz1.webp" alt="">
+              <img src="./img/izquierdoz2.webp" alt="">
+              <img src="./img/izquierdoz3.webp" alt="">
+            </div>
+            <a href="./index.html">Volver al Inicio <- </a>
         </div>
       <script src="./player.js"></script>
     </body>
